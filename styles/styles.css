@@ -1,0 +1,197 @@
+/* GLOBAL STYLING */
+html,
+ul,
+h2,
+p {
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+h1 {
+    color: #186684;
+    font-family: 'Nova Flat', cursive;
+    font-size: 10rem;
+    line-height: 9rem;
+    background: rgba(227, 228, 234, 89%);
+    padding: 10px;
+    max-width: 410px;
+    text-align: left;
+    float: center;
+    font-weight: normal;
+    position: absolute;
+    right: 24.5%;
+    top: 35.5%;
+}
+
+h2 {
+    font-family: 'Nova Flat', cursive;
+    font-size: 4.2rem;
+    color: #186684;
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    margin: 15px 0 32px
+}
+
+nav {
+    text-align: center;
+    font-family: 'Nova Flat', cursive;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+}
+
+nav li:hover,
+nav li:focus {
+    color: #E85B26;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.readMore {
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    font-family: 'Nova Flat', cursive;
+    color: #186684;
+    border: 3px solid #E85B26;
+    padding: 10px 15px;
+}
+
+.readMore:hover,
+.readMore:focus {
+    background: #E85B26;
+}
+
+/* HEADER STYLES */
+header {
+    background: url(../assets/image-1@2x.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100vw;
+    height: 100vh;
+    padding: 10px 50px;   
+    position: relative;
+}
+
+
+/* Main Navigation Styling */
+
+.mainNav {
+    margin-top: 0;
+    list-style: none;
+    color: #185584;
+}
+
+.mainNav li {
+    float: none;
+    display: inline;
+    color: #186684; 
+    Margin: 0 5px;
+
+}
+
+
+.mainNav a {
+        text-decoration: none;
+        padding: 10px;
+
+}
+
+/* socials */
+.socials {
+    float: right;
+    color: #E85B26;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    text-align: center;
+    position: absolute;
+    right: 4%;
+    top: 36%;
+}
+
+.socials a {
+    padding: 5px;
+}
+
+
+/* MAIN STYLES */
+.aboutText {
+height: auto;
+    width: calc(50% - 200px);
+    margin: 60px 100px 0;
+    padding: 10px 0;
+}
+
+
+.about img {
+    float: left;
+    max-width: 50%;
+}
+
+.specialize {
+    float: left;
+}
+
+/* ABOUT 2 */
+.footCare,
+.image2 {
+    display: inline-block;
+    /* float:left; */
+}
+
+.image2 {
+    float: left;
+    max-width: 50%;
+}
+
+
+/* BLOG STYLES */
+.blog {
+    background: #F4F4F4;
+    padding: 50px 100px;
+}
+
+.blog img,
+.blogText {
+    float: left;
+}
+
+.blog img {
+    margin-right: 30px;
+    width: calc(30% - 30px);
+    max-height: 300px;
+}
+
+.blogText {
+    width: 60%;
+    text-align: left;
+}
+
+/* font-family: 'Nova Flat', cursive;
+
+font-family: 'Catamaran', sans-serif;  */
