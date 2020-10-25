@@ -55,7 +55,7 @@ p {
     font-family: 'Catamaran', sans-serif;
     font-size: 2rem;
     line-height: 2.9rem;
-    margin: 15px 0 25px
+    margin: 20px 0 30px
 }
 
 nav {
@@ -80,6 +80,12 @@ nav li:focus {
 }
 
 .wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
     max-width: 1280px;
     width: 95%;
     margin: 0 auto;
@@ -119,6 +125,12 @@ header {
 
 
 /* Main Navigation Styling */
+input#dropdown,
+.burger label {
+    display: none;
+}
+
+
 
 .mainNav {
     margin-top: 0;
@@ -149,16 +161,15 @@ header {
 
 /* MAIN STYLES */
 .aboutText {
-height: auto;
-    width: calc(50% - 200px);
-    margin: 60px 100px 0;
-    padding: 10px 0;
-    float: left;
+    height: 350px;
+    width: 50%;
+    padding:9% 5% 0 5%;
+    float: right;
 }
 
 
 .image1 {
-    float: left;
+    float: right;
     max-width: 50%;
 }
 
@@ -180,14 +191,23 @@ height: auto;
 }
 
 .blog img {
-    margin-right: 30px;
+    margin-right: 50px;
     width: 300px;
     height: 300px;
 }
 
 .blogText {
-    width: 60%;
+    max-height: 300px;
+    margin-top: 10px;
+    max-width: 65%;
     text-align: left;
+}
+
+.blogText h2 {
+    margin-bottom: 10px;
+}
+.blogText p {
+    margin: 39px 0;
 }
 
 /* products, community Reach out */
@@ -201,7 +221,7 @@ height: auto;
 .menu {
     background: #f4f4f4;
     height: 45%;
-    width: 45%;
+    width: 50%;
     margin: auto;
     position: absolute;
     top: 0;
@@ -211,16 +231,38 @@ height: auto;
 }
 
 .menu ul{
-   text-align: center;
+   /* text-align: center; */
+   position: relative;
+   width: 100%;
+   height: 100%;
 }
 .menu li {
+    position: absolute;
     display: inline-block;
     font-family: 'Catamaran', sans-serif;
     font-weight: 600;
     font-size: 3rem;
     text-align: center;
-    margin: 40px 25px;
+    margin: 50px 0;
+    height: auto;
+    width: auto;
 }
+
+.menu ul li:nth-of-type(1) {
+    left: 8%;
+    margin: 40px 0;
+}
+
+.menu ul li:nth-of-type(2) {
+    left: 0;
+    right: 0;
+}
+
+.menu ul li:nth-of-type(3) {
+    right: 6%;
+}
+
+
 
 .menu i {
     color: #E85B26;
@@ -245,22 +287,19 @@ i.fa-shopping-bag {
 
 .gram h2 {
     text-align: center;
-    margin: 75px auto;
-}
-
-.gram h2,
-h3          {
+    margin: 70px auto;
     font-weight: normal;
     font-size: 3rem;
 }
 
 .gram li {
-	float: left;
-    width: calc(33% - 30px);
-    margin-right: 50px;
+    float: left;
+    margin-right: 45px;
+    width: calc((100% / 3) - 30px);
 }
 
-.gram li:last-of-type {
+
+.gram ul li:nth-of-type(3) {
     margin-right: 0;
 }
 
@@ -268,6 +307,7 @@ h3          {
 /* contact */
 
 .contact {
+    height: auto;
     background: #f4f4f4;
     margin-top: 75px;
     padding: 40px;
@@ -280,11 +320,11 @@ h3 {
 
 .contactInfo,
 .subscribe {
-    display: inline-block;
+    float: left;
 }
 
 .contactInfo {
-    width: 265px;
+   width: 265px;
 }
 
 .subscribe {
@@ -304,6 +344,7 @@ h3 {
     width: 445px;
     font-family: 'Catamaran', sans-serif;
     font-size: 2rem;
+    padding-left: 35px;
 }
 
 .subscribe button {
@@ -319,4 +360,188 @@ footer {
     font-size: 1.5rem;
     font-weight: 600;
     padding: 5px;
+}
+
+
+
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 940px) {
+    .image1,
+    .image2 {
+    float: none;
+    max-width: 100%;
+}
+
+    .aboutText {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .blogText {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 40px 17% 0;
+    }
+
+    
+    .blog img {
+        float: none;
+        display: block;
+        margin:  0 auto;
+        height: 400px;
+        width: 400px;
+    }
+
+
+    .products {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .menu {
+        width: 50%;
+        padding: 30px;
+        margin: auto;
+        position: static;
+    }
+
+    .menu ul{
+    position: static;
+    width: 100%;
+    height: auto;
+    }
+    
+    .menu li {
+        position: static;
+        display: block;
+    }
+
+    .contact,
+    .subscribe {
+        float: none;
+        display: block;
+    }
+
+    .contactInfo,
+    .subscribe {
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
+
+    .subscribe input {
+        width: 300px;
+        display: block;
+        margin: 10px auto;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    header {
+        background-position: 30% 50%;
+    }
+
+    h1 {
+        right: 12%;
+        top: 35.5%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        background-position: 32% 60% ;
+        padding-right: 0;
+    }
+
+    h1 {
+        top: 45%;
+        left: 20%;
+        padding: 5px;
+        font-size: 8rem;
+    }
+
+    .burgerContent {
+        max-width: 0;
+        overflow: hidden;
+        position: fixed;
+        right: 0;
+        top: 50px;
+        transition: all .5s;
+    }
+
+    .burger label {
+        display: block;
+        cursor: pointer;
+        font-size: 4rem;
+        color: #186684;
+        position: fixed;
+        right: 20px;
+    }
+    .mainNav li {
+        display: block;
+        background: rgba(227, 228, 234, 89%);
+        text-align: right;
+    }
+
+    .mainNav a {
+        padding: 10px;
+        margin-right: 5px;
+    }
+
+    input:checked ~ .burgerContent {
+        max-width: 150px;
+        margin: auto;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .gram h2 {
+        margin: 30px auto;
+    }
+
+    .gram ul {
+        height: auto;
+    }
+
+    .gram ul li {
+        width: calc(50% - 20px);
+        margin: 0;
+    }
+
+    .gram ul li:nth-of-type(2) {
+        margin-left: 40px;
+    }
+
+    .gram ul li:nth-of-type(3) {
+        display: none;
+    }
+
+    .bottomNav li {
+        margin: 0 20px;
+    }
+
+    .contact {
+        margin-top: 40px;
+        padding: 40px 0;
+    }
+
+    .subscribe input,
+    .subscribe button {
+        width: 100%;
+    }
+
+    .subscribe input {
+        display: block;
+        text-align: center;
+    }    
 }
